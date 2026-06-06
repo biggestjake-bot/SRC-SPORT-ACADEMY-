@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read the latest updates, stories, and announcements from SRC Sports Academy.">
+  <title>SRC Sports Academy | Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="blog">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header inner-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="SRC Sports Academy home">
+        <span class="brand-mark">S</span>
+        <span><strong>SRC Sports Academy</strong><small>Rise. Compete. Belong.</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="activities.html">New Activities</a>
+        <a href="events.html">Events</a>
+        <a class="active" href="blog.html">Blog</a>
+        <a href="register.html">Register</a>
+        <a class="nav-cta" href="book.html">Book Now</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="inner-page">
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Academy Blog</p>
+        <h1>Stories, updates, and momentum from the training ground.</h1>
+        <p data-search="blog announcements university sports news community engagement coaches trainers students parents">
+          This space helps coaches, trainers, students, and parents stay connected to academy life.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container blog-grid">
+        <article class="blog-card" data-search="announcement expansion new activities wrestling taekwondo judo volleyball">
+          <p class="card-tag">Announcement</p>
+          <h2>Four New Sports Join the Academy</h2>
+          <p>Wrestling, Taekwondo, Judo, and Volleyball launch this semester to widen student participation.</p>
+        </article>
+        <article class="blog-card" data-search="coach spotlight athlete development leadership">
+          <p class="card-tag">Coach Spotlight</p>
+          <h2>Why Athlete Care Starts with Listening</h2>
+          <p>Our coaching team is committed to performance that balances discipline, trust, and personal development.</p>
+        </article>
+        <article class="blog-card" data-search="community outreach open training parents residents">
+          <p class="card-tag">Community</p>
+          <h2>Open Training Days Build Local Connections</h2>
+          <p>Parents and community members are discovering new ways to engage with the academy's energy and structure.</p>
+        </article>
+        <article class="blog-card" data-search="events fixtures competitions student attendance">
+          <p class="card-tag">Events</p>
+          <h2>How to Prepare for the Next Competition Week</h2>
+          <p>Check fixtures early, book sessions in advance, and come ready for a strong academy presence.</p>
+        </article>
+        <article class="blog-card" data-search="newsletter updates email subscription">
+          <p class="card-tag">Updates</p>
+          <h2>Newsletter Sign-Up Keeps You in the Loop</h2>
+          <p>Registration includes a simple subscription option for announcements, event news, and academy highlights.</p>
+        </article>
+        <article class="blog-card" data-search="future development sponsorship alumni network">
+          <p class="card-tag">Vision</p>
+          <h2>The Long-Term Road to Regional Recognition</h2>
+          <p>The academy's future includes sponsorships, alumni engagement, and modern digital services for athletes.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container split-layout">
+        <article class="content-card" data-search="blog communication platform coaches trainers students parents">
+          <p class="eyebrow">Communication Platform</p>
+          <h2>One place for coaches, trainers, students, and parents.</h2>
+          <p>
+            This blog-style area supports announcements, training reflections, match previews, and community stories so every academy group stays informed.
+          </p>
+        </article>
+        <article class="content-card" data-search="success stories achievements competitions alumni sponsorship">
+          <p class="eyebrow">Storytelling</p>
+          <h2>Success stories that build community and attract support.</h2>
+          <p>
+            Achievement recaps, athlete profiles, and alumni highlights make it easier to grow trust with sponsors and external partners.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container forum-shell">
+        <div>
+          <p class="eyebrow">Community Board</p>
+          <h2>Share updates from coaches, trainers, students, and parents.</h2>
+          <p>This simple local message wall turns the blog into a live communication demo during your presentation.</p>
+        </div>
+        <form id="blog-board-form" class="stack-form" novalidate>
+          <label for="board-role">Role</label>
+          <select id="board-role" name="boardRole" required>
+            <option value="">Choose your role</option>
+            <option>Coach</option>
+            <option>Trainer</option>
+            <option>Student</option>
+            <option>Parent</option>
+          </select>
+          <label for="board-name">Name</label>
+          <input id="board-name" name="boardName" type="text" required>
+          <label for="board-message">Update</label>
+          <textarea id="board-message" name="boardMessage" rows="4" required></textarea>
+          <div class="recaptcha-shell">
+            <p class="recaptcha-label">Google reCAPTCHA</p>
+            <div id="blog-board-recaptcha" class="recaptcha-widget" data-form-id="blog-board-form"></div>
+            <small>Complete the Google reCAPTCHA check before posting your update.</small>
+          </div>
+          <button class="button button-primary" type="submit">Post Update</button>
+          <p class="form-feedback" id="blog-board-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="container">
+        <div id="blog-board-list" class="forum-list" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h2>SRC Sports Academy</h2><p>Developing university excellence, community opportunity, and a lifelong love of sport.</p></div>
+      <div><h3>Quick Links</h3><a href="events.html">Events</a><a href="register.html">Register</a><a href="book.html">Book Online</a></div>
+      <div><h3>Connect</h3><a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a><a href="mailto:info@srcsportsacademy.com">Email Us</a></div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
+</body>
+</html>
