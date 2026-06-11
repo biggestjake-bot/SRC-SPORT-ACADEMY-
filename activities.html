@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the new sports activities added to SRC Sports Academy.">
+  <title>SRC Sports Academy | New Activities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="activities">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header inner-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="SRC Sports Academy home">
+        <span class="brand-mark">S</span>
+        <span><strong>SRC Sports Academy</strong><small>Rise. Compete. Belong.</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a class="active" href="activities.html">New Activities</a>
+        <a href="events.html">Events</a>
+        <a href="blog.html">Blog</a>
+        <a href="register.html">Register</a>
+        <a class="nav-cta" href="book.html">Book Now</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="inner-page">
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">New Activities</p>
+        <h1>Fresh disciplines. Fresh energy. Fresh opportunities.</h1>
+        <p data-search="wrestling taekwondo judo volleyball new sports">
+          The academy’s newest additions expand access to martial arts, competitive teamwork, and wider pathways for talent discovery.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container cards-two">
+        <article class="program-card" data-search="wrestling grappling confidence strength">
+          <div class="card-media">
+            <img src="https://images.pexels.com/photos/4218188/pexels-photo-4218188.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Wrestlers practicing grappling techniques" loading="lazy" decoding="async">
+          </div>
+          <h2>Wrestling</h2>
+          <p>Develop leverage, body control, and calm decision-making under pressure.</p>
+        </article>
+        <article class="program-card" data-search="taekwondo discipline agility strikes">
+          <div class="card-media">
+            <img src="https://images.pexels.com/photos/6204650/pexels-photo-6204650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Taekwondo athletes practicing kicks" loading="lazy" decoding="async">
+          </div>
+          <h2>Taekwondo</h2>
+          <p>Build sharp technique, discipline, and powerful kicking combinations.</p>
+        </article>
+        <article class="program-card" data-search="judo throws balance tactical control">
+          <div class="card-media">
+            <img src="https://images.pexels.com/photos/532173/pexels-photo-532173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Judo training with focused throwing technique" loading="lazy" decoding="async">
+          </div>
+          <h2>Judo</h2>
+          <p>Learn balance disruption, throws, and respectful martial arts engagement.</p>
+        </article>
+        <article class="program-card" data-search="volleyball court awareness serve spike blocking">
+          <div class="card-media">
+            <img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Volleyball players celebrating a point" loading="lazy" decoding="async">
+          </div>
+          <h2>Volleyball</h2>
+          <p>Master timing, teamwork, and high-energy attacking and defensive play.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container forum-shell">
+        <div>
+          <p class="eyebrow">Community Q&amp;A</p>
+          <h2>Ask a quick question about the new programs.</h2>
+          <p>Questions saved here stay on your browser so you can demonstrate interactivity during your presentation.</p>
+        </div>
+        <form id="forum-form" class="stack-form" novalidate>
+          <label for="forum-name">Your name</label>
+          <input id="forum-name" name="forumName" type="text" required>
+          <label for="forum-question">Question</label>
+          <textarea id="forum-question" name="forumQuestion" rows="4" required></textarea>
+          <div class="recaptcha-shell">
+            <p class="recaptcha-label">Google reCAPTCHA</p>
+            <div id="forum-recaptcha" class="recaptcha-widget" data-form-id="forum-form"></div>
+            <small>Complete the Google reCAPTCHA check before posting.</small>
+          </div>
+          <button class="button button-primary" type="submit">Post Question</button>
+          <p class="form-feedback" id="forum-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="container">
+        <div id="forum-list" class="forum-list" aria-live="polite">
+        <article class="forum-item forum-empty-state">
+          <strong>No questions yet.</strong>
+          <p>Be the first to ask about Wrestling, Taekwondo, Judo, or Volleyball.</p>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h2>SRC Sports Academy</h2><p>Developing university excellence, community opportunity, and a lifelong love of sport.</p></div>
+      <div><h3>Quick Links</h3><a href="programs.html">Programs</a><a href="events.html">Events</a><a href="register.html">Register</a></div>
+      <div><h3>Connect</h3><a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a><a href="mailto:info@srcsportsacademy.com">Email Us</a></div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
+</body>
+</html>
